@@ -87,12 +87,13 @@ nav{
 .top nav a{
 	display: flex;
 	color: gray;
-	font-size: 10px;
+    font-size: 10px;
+    text-decoration: none;
 	
 }
 nav a:hover{
 	color:springgreen;
-	transition: color 2s;
+    transition: color 2s;
 }
 .logo{
 	display: flex;
@@ -279,10 +280,130 @@ hr{
 .services2{
 	margin-bottom: 2.5%;
 }
-@media (max-width: 800px){
 
+/* TABLET MODE */
+@media (max-width: 800px){
+    .snip{
+        display: none;
+    }
+    #right-focus{
+        display:none;
+    }
+    .top{
+        flex-direction:column-reverse;
+        height: 6vh;
+    }
+    .top nav a{
+        font-size: 14px;
+    }
+    nav {
+        width: 100%;
+    }
 }
 
+/* PHONE MODE */
 @media (max-width: 500px){
+    .snip{
+        display: none;
+    }
+    #right-focus{
+        display:none;
+    }
+    .top{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .logo{
+        padding: 3%;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        color: black;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+    }
+    .top nav a{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        color: gray;
+        font-size: 20px;
+        text-decoration: none;
+        height: 5vh;
+        border-top: 0.5px solid grey;
+        border-bottom: 0.5px solid grey;
+        align-items: center;
+        width: 100%;
+    }
+    .focus{
+        display: flex;
+        height: 18vh;
+        padding-top: 10%;
+    }
+    
+    #left-focus{
+        align-content: top;
+        font-size: 40px;
+    }
+    
+    #index-button{
+        display:flex;
+        background-color:none;
+        font-size: 1px;
+        width: 70%;
+        justify-content: center;       
+    }
 
+    #mid-contain{
+        font-size: 10px;
+        flex-direction: column;
+        height: 80vh;
+        justify-content: space-evenly;
+    }
+    .feat{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .feat p{
+        margin-bottom: 5%;
+    }
+    .services p{
+        margin-bottom: 5%;
+    }
+    .services{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    hr{
+        /* display:none; */
+    }
+    #feat-div1{
+        display:flex;
+        flex-direction: column;
+    }
+    #serv-div1{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #serv-div2{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #serv-div3{
+        display: flex;
+        flex-direction: column;   
+    }
+    #cr{
+        padding-top: 5%;
+
+    }
 }
